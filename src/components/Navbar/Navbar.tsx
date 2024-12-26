@@ -45,10 +45,13 @@ export default function Navbar() {
                         <div className="flex items-center gap-3">
                             <Link href={'/'} className="text-6xl"><TiSpiral className="rotate-45" /></Link>
                             {/* input */}
-                            <label className="input input-bordered flex items-center gap-2 w-80 rounded-xl border-2">
-                                <CiSearch className="text-3xl"/>
-                                <input type="text" className="grow" placeholder="Search your title" />
-                            </label>
+                            <div className="join">
+                                <label className="input input-bordered flex items-center gap-2 w-80 rounded-l-xl rounded-r-none border-2 border-[#FBD800] border-r-0">
+                                    <CiSearch className="text-3xl"/>
+                                    <input type="text" className="grow" placeholder="Search your title" />
+                                </label>
+                                <button className="btn join-item bg-[#FBD800] border-[#FBD800] rounded-r-xl text-[17px] font-semibold">Search</button>
+                            </div>
                             {/* button */}
                             <button className="btn gap-1 bg-[#FBD800] rounded-2xl px-4 text-[16px]">
                                 <FaLocationArrow className="text-lg" />
