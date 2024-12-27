@@ -4,6 +4,7 @@ import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import QueryProvider from "./queryProvider";
 
 
 const work_sans = Work_Sans({ subsets: ["latin"] });
@@ -30,11 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}  ${work_sans.className} antialiased bg-[#F5F4F2]`}>
-        <Navbar />
-        <main className="pt-20">
-          {children}
-        </main>
-        <Footer />
+        <QueryProvider>
+          <Navbar />
+          <main className="pt-20">
+            {children}
+          </main>
+          <Footer />
+        </QueryProvider>
       </body>
     </html>
   );
