@@ -14,9 +14,11 @@ export default function Banner() {
                             <p className="opacity-50">200+</p>
                         </div>
                     </button>
-                    <button className="btn h-14 rounded-2xl bg-[#EFEEEEE6] border-0">
-                        <PiWarningCircleBold className="text-3xl"/>
-                    </button>
+                    <section id="what-new">
+                        <button className="btn h-14 rounded-2xl bg-[#EFEEEEE6] border-0">
+                            <PiWarningCircleBold className="text-3xl"/>
+                        </button>
+                    </section >
                 </div>
             </div>
         </div>
