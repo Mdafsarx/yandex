@@ -1,4 +1,4 @@
-# RSIN
+# Yandex
 ## Live Site
 - [live site](https://yandex-bice.vercel.app)
 - [Server-side](https://github.com/Mdafsarx/yandex-server)
